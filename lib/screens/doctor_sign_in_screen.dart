@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'doctor_home_screen.dart';
-import '../widgets/mycard.dart';
+import '../widgets/my_card.dart';
 
 class ThirdScreen extends StatefulWidget {
-  static const String id = 'signin_screen';
+  static const String id = 'doctor_sign_in_screen';
+
   @override
   _ThirdScreenState createState() => _ThirdScreenState();
 }
@@ -26,35 +27,36 @@ class _ThirdScreenState extends State<ThirdScreen> {
               padding: const EdgeInsets.all(8.0),
               child: MyCard(
                 data: Icons.person_outline,
-                txt: 'name',
+                hintedText: 'name',
+
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: MyCard(
                 data: Icons.email,
-                txt: 'mail',
+                hintedText: 'mail',
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: MyCard(
                 data: Icons.account_box,
-                txt: 'ssn',
+                hintedText: 'ssn',
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: MyCard(
                 data: Icons.phone,
-                txt: 'phone',
+                hintedText: 'phone',
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: MyCard(
                 data: Icons.vpn_key,
-                txt: 'password',
+                hintedText: 'password',
               ),
             ),
             Container(

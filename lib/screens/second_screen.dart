@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'signin_screen.dart';
-import 'package:flutter/services.dart';
-import '../widgets/mycard.dart';
+import 'doctor_sign_in_screen.dart';
+import '../widgets/my_card.dart';
 
 class SecondScreen extends StatefulWidget {
   static const String id = 'second_screen';
@@ -23,14 +22,14 @@ class _SecondScreenState extends State<SecondScreen> {
               padding: const EdgeInsets.all(10.0),
               child: MyCard(
                 data: Icons.email,
-                txt: "email",
+                hintedText:"email",
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: MyCard(
                 data: Icons.vpn_key,
-                txt: 'password',
+                hintedText: 'password',
               ),
             ),
             Container(

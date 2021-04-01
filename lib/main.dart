@@ -1,10 +1,11 @@
+import 'screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'screens/add_lecature_screen.dart';
 import 'screens/lecature_info_screen.dart';
 import 'screens/first_screen.dart';
 import 'screens/second_screen.dart';
-import 'screens/signin_screen.dart';
+import 'screens/doctor_sign_in_screen.dart';
 import 'screens/doctor_home_screen.dart';
 import 'screens/add_course_screen.dart';
 
@@ -26,8 +27,9 @@ class MyApp extends StatelessWidget {
             bodyText2: TextStyle(fontSize: 25.0,color:Colors.white),
             button: TextStyle(fontSize:50.0 ,color:Color.fromRGBO(14, 5, 110,5) ),
           ) ) ,
-      initialRoute: FirstScreen.id,
+      initialRoute: SplashScreen.id,
       routes: {
+        SplashScreen.id:(context)=>SplashScreen(),
         FirstScreen.id:(context) =>  FirstScreen(),
         SecondScreen.id :(context)=> SecondScreen(),
         ThirdScreen.id:(context)=> ThirdScreen(),
