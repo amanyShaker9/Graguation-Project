@@ -1,3 +1,5 @@
+
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'second_screen.dart';
 
@@ -8,6 +10,19 @@ class FirstScreen extends StatefulWidget {
 }
 
 class _FirstScreenState extends State<FirstScreen> {
+  FirebaseAuth instance = FirebaseAuth.instance; //server auth DataBase
+  void initstate(){
+    super.initState();
+     instance.onAuthStateChanged.listen(( doctor)  {
+      if(doctor == null){
+        Navigator.pushReplacement(context,MaterialPageRoute(builder: (context) => SecondScreen() ) );
+      }
+      else{
+
+      }
+     });
+
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'doctor_home_screen.dart';
 import '../widgets/mycard.dart';
@@ -9,6 +10,8 @@ class ThirdScreen extends StatefulWidget {
 }
 
 class _ThirdScreenState extends State<ThirdScreen> {
+  FirebaseAuth instant =FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
     return Container(
