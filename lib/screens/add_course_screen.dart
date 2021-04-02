@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../widgets/mycard.dart';
+import '../widgets/my_card.dart';
 
 class AddCourseScreen extends StatefulWidget {
   static const String id = 'add_course_screen';
@@ -25,19 +25,19 @@ class _AddCourseScreenState extends State<AddCourseScreen> {
             Padding(
               padding: const EdgeInsets.fromLTRB(10.0, 100.0, 10.0, 10.0),
               child: MyCard(
-                txt: 'Academic Year',
+                hintedText: 'Academic Year',
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: MyCard(
-                txt: 'Department',
+                hintedText: 'Department',
               ),
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 100.0),
               child: MyCard(
-                txt: 'Subject',
+                hintedText: 'Subject',
               ),
             ),
             Container(
@@ -49,6 +49,9 @@ class _AddCourseScreenState extends State<AddCourseScreen> {
                   'add',
                   style: TextStyle(color: Colors.white, fontSize: 20.0),
                 ),
+                onPressed: (){
+
+                },
               ),
             )
           ],
